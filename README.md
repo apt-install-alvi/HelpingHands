@@ -83,6 +83,11 @@ Users can set important appointments and view them. Appointment types can be Doc
 &nbsp; &nbsp;
   <img alt="calendar" src="src/screenshots/Calendar2.png" width="45%">
 </p>
+<p align="center">
+  <img alt="set appointment" src="src/screenshots/Calendar3.png" width="45%">
+&nbsp; &nbsp;
+  <img alt="appointment types" src="src/screenshots/Calendar4.png" width="45%">
+</p>
 
 
 <h3>E-pharmacy</h3>
