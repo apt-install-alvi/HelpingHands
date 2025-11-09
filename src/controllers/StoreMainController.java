@@ -166,7 +166,7 @@ public class StoreMainController extends TransitionUtils implements Initializabl
 	private void setSelectedEq(Equipment e)
 	{
 		purchasebox.setVisible(true);
-		VBox.setMargin(purchasebox, new Insets((-1)*contentbox.getWidth(), 0,0,0));
+		VBox.setMargin(purchasebox, new Insets((-1)*contentbox.getWidth(),0,0,contentbox.getWidth() - purchasebox.getWidth()));
 		buyimg.setImage(new Image(getClass().getResourceAsStream(e.getImg())));
 		buyname.setText(e.getName());
 		buydetails.setText("Price: "+e.getPrice());

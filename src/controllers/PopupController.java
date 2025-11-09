@@ -33,7 +33,7 @@ public class PopupController {
         amorpm.getItems().addAll("AM", "PM");
 
     
-        appoint_choice.setValue("Meeting");
+        appoint_choice.setValue("---");
         amorpm.setValue("AM");
 
        
