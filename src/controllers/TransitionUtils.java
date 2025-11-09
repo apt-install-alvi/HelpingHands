@@ -43,7 +43,7 @@ public class TransitionUtils {
 			fadeOutToScene(rootNode, "MedTracker1");
 		});
 		meal_btn.setOnAction((e)->{
-			fadeOutToScene(rootNode, "MealPlanner");
+			fadeOutToScene(rootNode, "MealPlan");
 		});
 		map_btn.setOnAction((e)->{
 			fadeOutToScene(rootNode, "Map");
@@ -155,7 +155,7 @@ public class TransitionUtils {
 			fadeOutToScene(rootNode, "MedTracker1");
 		});
 		meal_btn.setOnAction((e)->{
-			fadeOutToScene(rootNode, "MealPlanner");
+			fadeOutToScene(rootNode, "MealPlan");
 		});
 		map_btn.setOnAction((e)->{
 			fadeOutToScene(rootNode, "Map");

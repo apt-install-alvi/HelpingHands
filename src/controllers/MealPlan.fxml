@@ -71,11 +71,11 @@
                </padding>
             </Button>
             <Separator prefWidth="200.0" />
-            <Button fx:id="meal_btn" graphicTextGap="8.0" maxHeight="-Infinity" mnemonicParsing="false" prefHeight="103.0" prefWidth="279.0" styleClass="sidebar-btn" text="Meal Planner">
+            <Button id="selected" fx:id="meal_btn" graphicTextGap="8.0" maxHeight="-Infinity" mnemonicParsing="false" prefHeight="103.0" prefWidth="279.0" styleClass="sidebar-btn" text="Meal Planner">
                <graphic>
                   <ImageView fitHeight="61.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../resources/icons/icons8-meal-100%20(1).png" />
+                        <Image url="@../resources/icons/icons8-meal-100.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -84,11 +84,11 @@
                </padding>
             </Button>
             <Separator prefWidth="200.0" />
-            <Button id="selected" fx:id="store_btn" graphicTextGap="8.0" maxHeight="-Infinity" mnemonicParsing="false" prefHeight="103.0" prefWidth="336.0" styleClass="sidebar-btn" text="E-Store">
+            <Button fx:id="store_btn" graphicTextGap="8.0" maxHeight="-Infinity" mnemonicParsing="false" prefHeight="103.0" prefWidth="336.0" styleClass="sidebar-btn" text="E-Store">
                <graphic>
                   <ImageView fitHeight="48.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../resources/icons/icons8-add-shopping-cart-100.png" />
+                        <Image url="@../resources/icons/icons8-add-shopping-cart-100%20(1).png" />
                      </image>
                   </ImageView>
                </graphic>

@@ -43,11 +43,11 @@
                </padding>
             </Button>
             <Separator prefWidth="200.0" />
-            <Button id="selected" graphicTextGap="8.0" maxHeight="-Infinity" mnemonicParsing="false" prefHeight="103.0" prefWidth="284.0" styleClass="sidebar-btn" text="Calendar">
+            <Button graphicTextGap="8.0" maxHeight="-Infinity" mnemonicParsing="false" prefHeight="103.0" prefWidth="284.0" styleClass="sidebar-btn" text="Calendar">
                <graphic>
                   <ImageView fitHeight="38.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../resources/icons/icons8-calendar-100%20(2).png" />
+                        <Image url="@../resources/icons/icons8-calendar-100%20(3).png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -95,11 +95,11 @@
                </padding>
             </Button>
             <Separator prefWidth="200.0" />
-            <Button fx:id="guide_btn" graphicTextGap="8.0" maxHeight="-Infinity" mnemonicParsing="false" prefHeight="103.0" prefWidth="301.0" styleClass="sidebar-btn" text="Exercise Guide">
+            <Button id="selected" fx:id="guide_btn" graphicTextGap="8.0" maxHeight="-Infinity" mnemonicParsing="false" prefHeight="103.0" prefWidth="301.0" styleClass="sidebar-btn" text="Exercise Guide">
                <graphic>
                   <ImageView fitHeight="43.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../resources/icons/icons8-exercise-100%20(2).png" />
+                        <Image url="@../resources/icons/icons8-exercise-100%20(3).png" />
                      </image>
                   </ImageView>
                </graphic>

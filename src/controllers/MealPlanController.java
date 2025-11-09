@@ -9,7 +9,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 
 public class MealPlanController extends TransitionUtils implements Initializable {
-	  @FXML private HBox roothb;
+	  	@FXML private HBox roothb;
 	    @FXML private StackPane return_btn;
 		@Override
 		public void initialize(URL location, ResourceBundle resources) {

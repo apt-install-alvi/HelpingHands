@@ -48,9 +48,9 @@ public class MedTracker1Controller extends TransitionUtils implements Initializa
 		return_btn.setOnMouseClicked((e)->{
 			fadeOutToScene(roothb, "Home");
 		});
-		viewhistory_btn.setOnAction((e)->{
-			fadeOutToScene(roothb, "MedHistory");
-		});
+//		viewhistory_btn.setOnAction((e)->{
+//			fadeOutToScene(roothb, "MedHistory");
+//		});
 		medadd_btn.setOnAction((e)->{
 			fadeOutToScene(roothb, "MedicineAdd");
 	
