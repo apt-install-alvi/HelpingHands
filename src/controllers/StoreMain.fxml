@@ -135,7 +135,7 @@
                               <Insets left="60.0" />
                            </HBox.margin>
                         </StackPane>
-                        <Label id="header" text="Store">
+                        <Label id="header" text="E-Store">
                            <HBox.margin>
                               <Insets />
                            </HBox.margin>
