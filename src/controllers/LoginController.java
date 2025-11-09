@@ -67,7 +67,6 @@ public class LoginController extends TransitionUtils implements Initializable {
             showAlert(Alert.AlertType.INFORMATION ,null,"Login Successful!!");
             
             fadeOutToScene(rootvb, "Home");
-            Main.remove_onboarding = 1;
         } else {
         	showAlert(Alert.AlertType.ERROR,"Invalid Input" ,"Invalid username/email or password!");
            

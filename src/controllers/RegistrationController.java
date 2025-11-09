@@ -130,7 +130,6 @@ public class RegistrationController extends TransitionUtils implements Initializ
                     
                     UserProfileController.setUserData(userInput, emailInput);
 
-                    Main.remove_onboarding = 1;
                     fadeOutToScene(rootvb, "HealthProfile");
                 } else {
                 	showAlert(Alert.AlertType.ERROR,"" ,"Failed to create account. Please try again");
