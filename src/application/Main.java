@@ -14,16 +14,12 @@ import java.util.Objects;
 
 public class Main extends Application {
 	
-	public static int remove_onboarding=0; //flag to remove onboarding screen on next bootup after login/registration
 	Parent root;
 	
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			if(remove_onboarding==0)
-				root= FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/controllers/Home.fxml")));
-			else
-				root= FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/controllers/Login.fxml")));
+			root= FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/controllers/StoreMain.fxml")));
 
 			Scene scene = new Scene(root, Color.WHITE);
 //			scene.getStylesheets().add(getClass().getResource("/resources/css/onboarding.css").toExternalForm());

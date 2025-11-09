@@ -16,6 +16,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -39,12 +40,11 @@ public class StoreMainController extends TransitionUtils implements Initializabl
 	@FXML private Button viewcart = new Button();
 	@FXML private Button medicine = new Button();
 	@FXML private Button equipment = new Button();
-//	@FXML private Button search_btn = new Button();
-	
-//	@FXML private TextField searchbar = new TextField();
+
 	
 	@FXML private FlowPane itemflow = new FlowPane();
 	
+	@FXML private StackPane contentPane = new StackPane();
 	@FXML private VBox purchasebox = new VBox();
 	@FXML private VBox contentbox = new VBox();
 	@FXML private Button confirmbuy = new Button();
@@ -72,7 +72,7 @@ public class StoreMainController extends TransitionUtils implements Initializabl
 					ResultSet rs = statement.executeQuery();
 					while(rs.next())
 					{
-						Product product = new Product(rs.getString("medname"), rs.getString("img"), rs.getString("amount"), rs.getString("doseunit"), rs.getInt("dose"), rs.getDouble("pricePerUnit"));
+						Product product = new Product(rs.getString("medname"), rs.getString("img"), rs.getString("amount"), rs.getString("doseunit"), rs.getInt("dose"), rs.getDouble("price"));
 						meds.add(product);
 					}
 					con.close();
@@ -121,7 +121,10 @@ public class StoreMainController extends TransitionUtils implements Initializabl
 			
 			ItemController itemcontroller = loader.getController();
 			itemcontroller.setItemData(meds.get(i), medlistener);
-			
+//			System.out.println(
+//				    meds.get(i).getName() + " → price: " + meds.get(i).getPrice()
+//				);
+
 			itemflow.getChildren().add(root);
 		}
 	}
@@ -150,7 +153,8 @@ public class StoreMainController extends TransitionUtils implements Initializabl
 	private void setSelectedMed(Product p)
 	{
 		purchasebox.setVisible(true);
-		VBox.setMargin(purchasebox, new Insets((-1)*contentbox.getWidth(), 0,0,0));
+		contentPane.setAlignment(purchasebox, Pos.TOP_RIGHT);
+//		VBox.setMargin(purchasebox, new Insets((-1)*contentbox.getWidth(), 0,0,0));
 		buyimg.setImage(new Image(getClass().getResourceAsStream(p.getImg())));
 		buyname.setText(p.getName());
 		buydetails.setText("Dose: "+p.getDose()+" "+p.getDoseUnit()+
@@ -166,7 +170,8 @@ public class StoreMainController extends TransitionUtils implements Initializabl
 	private void setSelectedEq(Equipment e)
 	{
 		purchasebox.setVisible(true);
-		VBox.setMargin(purchasebox, new Insets((-1)*contentbox.getWidth(), 0,0,0));
+		contentPane.setAlignment(purchasebox, Pos.TOP_RIGHT);
+//		VBox.setMargin(purchasebox, new Insets((-1)*contentbox.getWidth(),0,0,contentbox.getWidth() - purchasebox.getWidth()));
 		buyimg.setImage(new Image(getClass().getResourceAsStream(e.getImg())));
 		buyname.setText(e.getName());
 		buydetails.setText("Price: "+e.getPrice());
@@ -236,7 +241,7 @@ public class StoreMainController extends TransitionUtils implements Initializabl
 		});
 		cross_btn.setOnAction((e)->{
 			purchasebox.setVisible(false);
-			VBox.setMargin(purchasebox, new Insets(contentbox.getWidth(), 0,0,0));
+//			VBox.setMargin(purchasebox, new Insets(contentbox.getWidth(), 0,0,0));
 		});
 //		viewcart.setOnAction((e)->{
 //			fadeOutToScene(roothb, "StoreCart");

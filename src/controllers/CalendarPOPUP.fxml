@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PopupController">
    <children>
       <VBox layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="372.0" prefWidth="581.0" styleClass="calbg" stylesheets="@../resources/css/calendar.css">
@@ -38,7 +37,7 @@
             </HBox>
             <ButtonBar prefHeight="55.0" prefWidth="500.0">
                <buttons>
-                  <Button fx:id="appoint_set" mnemonicParsing="false" prefHeight="47.0" prefWidth="191.0" styleClass="popupButton" text="Set Appointment" />
+                  <Button fx:id="appoint_set" mnemonicParsing="false" prefHeight="47.0" prefWidth="249.0" styleClass="popupButton" text="Set Appointment" />
                </buttons>
                <VBox.margin>
                   <Insets right="40.0" top="40.0" />

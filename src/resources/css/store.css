@@ -118,7 +118,7 @@
 /*purchase page*/
 .productdetails, #quantity
 {
-  -fx-font-size: 24;
+  -fx-font-size: 20;
   -fx-text-fill:#1d2366;
   -fx-font-family: "Plus Jakarta Sans Medium";
 }
@@ -169,8 +169,9 @@
   -fx-font-size: 16;
 }
 
-#buyname, #proddetlabel, #purchqtlabel, #total
+#buyname, #proddetlabel, #purchqtlabel
 {
+  -fx-font-size: 24;
   -fx-font-family: "Plus Jakarta Sans Bold";
 }
 

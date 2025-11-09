@@ -111,74 +111,75 @@
             </Button>
          </children>
       </VBox>
-      <VBox fx:id="contentbox" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1006.0" HBox.hgrow="ALWAYS">
+      <StackPane fx:id="contentPane" prefHeight="150.0" prefWidth="200.0">
          <children>
-            <HBox id="headerbox" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="79.0" prefWidth="1006.0" spacing="12.0" VBox.vgrow="ALWAYS">
+            <VBox fx:id="contentbox" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1006.0" spacing="8.0">
                <children>
-                  <StackPane fx:id="return_btn" prefHeight="25.0" prefWidth="30.0">
+                  <HBox id="headerbox" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="79.0" prefWidth="1006.0" spacing="12.0">
                      <children>
-                        <Line fx:id="arrowbase" endX="20.0" stroke="#1d2366" strokeWidth="4.0" />
-                        <Line fx:id="arrowtop" endX="12.0" rotate="-135.0" stroke="#1d2366" strokeWidth="4.0">
-                           <StackPane.margin>
-                              <Insets left="-14.0" top="9.0" />
-                           </StackPane.margin>
-                        </Line>
-                        <Line fx:id="arrowbot" endX="12.0" rotate="135.0" stroke="#1d2366" strokeWidth="4.0">
-                           <StackPane.margin>
-                              <Insets bottom="10.0" left="-14.0" />
-                           </StackPane.margin>
-                        </Line>
-                     </children>
-                     <HBox.margin>
-                        <Insets left="60.0" />
-                     </HBox.margin>
-                  </StackPane>
-                  <Label id="header" text="Store">
-                     <HBox.margin>
-                        <Insets />
-                     </HBox.margin>
-                  </Label>
-               </children>
-            </HBox>
-            <ScrollPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="994.0" VBox.vgrow="ALWAYS">
-               <content>
-                  <VBox minHeight="-Infinity" minWidth="-Infinity" prefWidth="1006.0">
-                     <children>
-                        <Label styleClass="subheader" text="Categories">
-                           <VBox.margin>
-                              <Insets top="20.0" />
-                           </VBox.margin>
-                        </Label>
-                        <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="926.0" spacing="20.0">
+                        <StackPane fx:id="return_btn" prefHeight="25.0" prefWidth="30.0">
                            <children>
-                            <Button fx:id="medicine" mnemonicParsing="false" prefHeight="41.0" prefWidth="113.0" styleClass="notsearch" text="Medicine" />
-                              <Button fx:id="equipment" mnemonicParsing="false" prefHeight="41.0" prefWidth="132.0" styleClass="notsearch" text="Equipment" />
+                              <Line fx:id="arrowbase" endX="20.0" stroke="#1d2366" strokeWidth="4.0" />
+                              <Line fx:id="arrowtop" endX="12.0" rotate="-135.0" stroke="#1d2366" strokeWidth="4.0">
+                                 <StackPane.margin>
+                                    <Insets left="-14.0" top="9.0" />
+                                 </StackPane.margin>
+                              </Line>
+                              <Line fx:id="arrowbot" endX="12.0" rotate="135.0" stroke="#1d2366" strokeWidth="4.0">
+                                 <StackPane.margin>
+                                    <Insets bottom="10.0" left="-14.0" />
+                                 </StackPane.margin>
+                              </Line>
                            </children>
-                           <VBox.margin>
-                              <Insets top="16.0" />
-                           </VBox.margin>
-                        </HBox>
-                        <Label styleClass="subheader" text="Products">
-                           <VBox.margin>
-                              <Insets top="40.0" />
-                           </VBox.margin>
+                           <HBox.margin>
+                              <Insets left="60.0" />
+                           </HBox.margin>
+                        </StackPane>
+                        <Label id="header" text="Store">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
                         </Label>
-                        <FlowPane fx:id="itemflow" columnHalignment="CENTER" hgap="60.0" minWidth="-Infinity" prefHeight="1500.0" prefWidth="926.0" vgap="80.0">
-                           <VBox.margin>
-                              <Insets top="28.0" />
-                           </VBox.margin>
-                        </FlowPane>
                      </children>
-                     <padding>
-                        <Insets left="40.0" right="40.0" />
-                     </padding>
-                  </VBox>
-               </content>
-               <VBox.margin>
-                  <Insets left="12.0" top="6.0" />
-               </VBox.margin>
-            </ScrollPane>
-            <VBox fx:id="purchasebox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="396.0" styleClass="bg-box">
+                  </HBox>
+                  <ScrollPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="643.0" prefWidth="1006.0">
+                     <content>
+                        <VBox minHeight="-Infinity" minWidth="-Infinity" prefWidth="1006.0">
+                           <children>
+                              <Label styleClass="subheader" text="Categories">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="926.0" spacing="20.0">
+                                 <children>
+                                  <Button fx:id="medicine" mnemonicParsing="false" prefHeight="41.0" prefWidth="113.0" styleClass="notsearch" text="Medicine" />
+                                    <Button fx:id="equipment" mnemonicParsing="false" prefHeight="41.0" prefWidth="132.0" styleClass="notsearch" text="Equipment" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="16.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <Label styleClass="subheader" text="Products">
+                                 <VBox.margin>
+                                    <Insets top="40.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <FlowPane fx:id="itemflow" columnHalignment="CENTER" hgap="60.0" minWidth="-Infinity" prefHeight="1500.0" prefWidth="926.0" vgap="80.0">
+                                 <VBox.margin>
+                                    <Insets top="28.0" />
+                                 </VBox.margin>
+                              </FlowPane>
+                           </children>
+                           <padding>
+                              <Insets left="40.0" right="40.0" />
+                           </padding>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+            <VBox fx:id="purchasebox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="715.0" prefWidth="396.0" styleClass="bg-box">
                <children>
                   <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="396.0">
                      <children>
@@ -202,12 +203,12 @@
                         <ImageView fx:id="buyimg" fitHeight="164.0" fitWidth="187.0" pickOnBounds="true" preserveRatio="true" />
                      </children>
                   </VBox>
-                  <Label fx:id="buyname" styleClass="productdetails" text="Label">
+                  <Label fx:id="buyname" prefHeight="32.0" prefWidth="365.0" styleClass="productdetails" text="Label">
                      <VBox.margin>
                         <Insets left="40.0" top="12.0" />
                      </VBox.margin>
                   </Label>
-                  <Label fx:id="proddetlabel" styleClass="productdetails" text="Product Details:">
+                  <Label fx:id="proddetlabel" prefHeight="32.0" prefWidth="367.0" styleClass="productdetails" text="Product Details:">
                      <VBox.margin>
                         <Insets left="40.0" top="12.0" />
                      </VBox.margin>
@@ -226,7 +227,7 @@
                         <Insets left="40.0" top="12.0" />
                      </VBox.margin>
                   </HBox>
-                  <Label fx:id="total" prefHeight="104.0" prefWidth="391.0" styleClass="productdetails" text="Please specify the quantity you want to purchase." wrapText="true">
+                  <Label fx:id="total" prefHeight="81.0" prefWidth="314.0" styleClass="productdetails" text="Please specify the quantity you want to purchase." wrapText="true">
                      <VBox.margin>
                         <Insets left="40.0" top="12.0" />
                      </VBox.margin>
@@ -239,7 +240,7 @@
                </children>
             </VBox>
          </children>
-      </VBox>
+      </StackPane>
    </children>
    <stylesheets>
       <URL value="@../resources/css/store.css" />
