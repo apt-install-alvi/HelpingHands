@@ -51,4 +51,4 @@ Our UI is incredibly simple and straightforward to make it easier to navigate th
 
 - Refa Jahan
 
-  E-mail: 
+  E-mail: refarefajahan@gmail.com
