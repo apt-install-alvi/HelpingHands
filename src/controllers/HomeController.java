@@ -91,9 +91,13 @@ public class HomeController extends TransitionUtils implements Initializable {
      * Updates the "nothingDue" label with the list of pending medications.
      */
     private void updatePendingMedicationsLabel(List<Medicine> pendingMedicines) {
-        if (pendingMedicines.isEmpty()) {
+        if (pendingMedicines.isEmpty()) 
+        {
             nothingDue.setText("Nothing due.");
-        } else {
+        } 
+        
+        else 
+        {
             StringBuilder medicationsText = new StringBuilder("");
           
             for (int i = 0; i < pendingMedicines.size(); i++) {
@@ -109,17 +113,22 @@ public class HomeController extends TransitionUtils implements Initializable {
             nothingDue.setText(medicationsText.toString());
         }
     }
+    
     private void updateAppointmentsLabel() {
         int userId = UserSession.getInstance().getUserId();
-        if (userId != -1) {
+        if (userId != -1) 
+        {
             List<Appointment> appointments = DatabaseUtil.getAppointmentsForUser(userId);
 
             if (appointments.isEmpty()) {
                 noAppointment.setText("Nothing Scheduled");
-            } else {
-                StringBuilder appointmentsText = new StringBuilder("Appointments:\n");
+            } 
+            
+            else 
+            {
+                StringBuilder appointmentsText = new StringBuilder("Appointments:\n\n");
                 for (Appointment appt : appointments) {
-                    appointmentsText.append("• ")
+                    appointmentsText.append("•\t")
                             
                             .append(appt.getDay())
                             .append("/")
@@ -127,15 +136,18 @@ public class HomeController extends TransitionUtils implements Initializable {
                             .append("/")
                             .append(appt.getYear())
                             .append("\n")
-                            .append("  ")
+                            .append("\t")
                             .append(appt.getType())
-                            .append("-")
+                            .append(" - ")
                             .append(appt.getTime())
                             .append("\n");
                 }
                 noAppointment.setText(appointmentsText.toString());
             }
-        } else {
+        } 
+        
+        else 
+        {
             noAppointment.setText("No user is logged in.");
         }
     }

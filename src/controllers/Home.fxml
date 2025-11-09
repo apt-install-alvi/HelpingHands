@@ -62,9 +62,9 @@
                                     <Image url="@../resources/img/calendar.png" />
                                  </image>
                               </ImageView>
-                              <Label fx:id="noAppointment" prefHeight="299.0" prefWidth="326.0" styleClass="container-inner-txt" text="      Nothing Scheduled">
+                              <Label fx:id="noAppointment" alignment="TOP_LEFT" prefHeight="325.0" prefWidth="249.0" styleClass="container-inner-txt" text="      Nothing Scheduled" wrapText="true">
                                  <VBox.margin>
-                                    <Insets bottom="32.0" left="20.0" top="-28.0" />
+                                    <Insets bottom="32.0" top="-28.0" />
                                  </VBox.margin>
                               </Label>
                               <Button fx:id="caldetails_btn" mnemonicParsing="false" prefHeight="49.0" prefWidth="157.0" styleClass="container-btn" text="View Details" />
@@ -104,10 +104,10 @@
                                                 <Insets left="16.0" />
                                              </HBox.margin>
                                           </Pane>
-                                          <VBox prefHeight="125.0" prefWidth="349.0">
+                                          <VBox prefHeight="125.0" prefWidth="285.0">
                                              <children>
                                                 <Label id="duetxt" fx:id="DueToday" styleClass="container-inner-txt" text="Due today" />
-                                                <Label fx:id="nothingDue" styleClass="container-inner-txt" text="Nothing due">
+                                                <Label fx:id="nothingDue" alignment="TOP_LEFT" prefHeight="104.0" prefWidth="285.0" styleClass="container-inner-txt" text="Nothing due" wrapText="true">
                                                    <VBox.margin>
                                                       <Insets top="4.0" />
                                                    </VBox.margin>

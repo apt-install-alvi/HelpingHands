@@ -19,7 +19,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			root= FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/controllers/OnboardingScreen1.fxml")));
+			root= FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/controllers/Login.fxml")));
 
 			Scene scene = new Scene(root, Color.WHITE);
 //			scene.getStylesheets().add(getClass().getResource("/resources/css/onboarding.css").toExternalForm());
