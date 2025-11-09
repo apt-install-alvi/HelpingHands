@@ -25,7 +25,7 @@ A user-friendly Wellbeing App geared towards maintaining the health of the elder
   <img alt="home screen" src="src/screenshots/Home.png" width="75%">
 </p>
 The UI was the main focus for this project where we tried to make the interface as user-friendly as possible for the target demographic.
-Our UI is incredibly simple and straightforward to make it easier to navigate through. All of our colours are WCAG Compliant, with each scoring a AAA rating. Texts are larger and bolder; buttons are bigger and contrasted properly against the background, many of which utilize icons along with text for ease of understanding. The interface itself was implemented strictly in Light Mode to respect the visual difficulties typically faced by the elderly when using Dark Mode.
+Our UI is incredibly simple and straightforward to make it easier to navigate through. All of our colours are WCAG Compliant, with the core palette scoring a AAA rating. Texts are larger and bolder; buttons are bigger and contrasted properly against the background, many of which utilize icons along with text for ease of understanding. The interface itself was implemented strictly in Light Mode to respect the visual difficulties typically faced by the elderly when using Dark Mode.
 
 ## Features
 <h3>Account Authentication</h3> 
